@@ -1,0 +1,208 @@
+{
+  "languageName": "Deutsch",
+  "dateLocale": "de-DE",
+  "app": {
+    "pageTitle": "Briefgenerator für Rechtsausübung",
+    "title": "Briefgenerator für Rechtsausübung",
+    "tagline": "Generiere Datenschutz- und Widerrufsrechtbreife ohne das Information den Browser verlässt.",
+    "languageLabel": "Sprache",
+    "tabNavAria": "Wähle Briefvorlagenkategorie",
+    "footerNote": "Nichts wird gespeichert oder zu einem Server gesendet. Alles geschriebene bleibt im Browser."
+  },
+  "tabs": {
+    "gdpr": "GDPR-Rechte",
+    "gdprSubtitle": "Art. 14 und 17",
+    "angrerett": "Norwegisches Widerrufsrecht",
+    "angrerettSubtitle": "Das Recht zum widerrufen"
+  },
+  "gdpr": {
+    "heading": "GDPR Recht Anfrage",
+    "description": "Erstelle anfragen nach Datenschutz-Grundverordnung Artikel 14 (Auskunft) und Artikel 17 (Löschung) auf einem Ort.",
+    "formAria": "Details für die GDPR Anfrage",
+    "previewAria": "Vorschau für GDPR Brief",
+    "copyButtonLabel": "Kopiere Brief",
+    "form": {
+      "requestType": {
+        "label": "Anfragentyp",
+        "options": [
+          { "value": "information", "label": "Artikel 14 – Informationspflicht" },
+          { "value": "erasure", "label": "Artikel 17 – Recht auf Löschung" }
+        ]
+      },
+      "controllerName": {
+        "label": "Behandlungsverantwortlicher",
+        "placeholder": "Beispel GMBH"
+      },
+      "controllerAddress": {
+        "label": "Adresse des Behandlungsverantwortlichen",
+        "placeholder": "Straße 1\n0123 Oslo"
+      },
+      "controllerEmail": {
+        "label": "Kontakt-E-Mail (optional)",
+        "placeholder": "datenschutz@beipsel.de"
+      },
+      "subjectName": {
+        "label": "Dein Name",
+        "placeholder": "Max Mustermann"
+      },
+      "subjectAddress": {
+        "label": "Deine Adresse",
+        "placeholder": "Straße 2\n0456 Oslo"
+      },
+      "referenceId": {
+        "label": "Kunden- oder Referanznummer (optional)",
+        "placeholder": "Kundennummer 12345"
+      },
+      "dataSource": {
+        "label": "Wie das Unternehmen an die Informationen gelangte (optional)",
+        "placeholder": "E.g. gekauft von einer Marketingliste"
+      },
+      "requestDate": {
+        "label": "Datum"
+      },
+      "sections": {
+        "request": "Anfrage",
+        "subject": "Über dich",
+        "controller": "Über den Behandlungsverantwortlichen",
+        "context": "Zuzusätzliche Informationen"
+      }
+    },
+    "legal": {
+      "heading": "Rechtsgrundlage",
+      "items": [
+        "Datenschutz-Grundverordnung (EU) 2016/679 Artikel 14",
+        "Artikel 12: Transparente Information",
+        "Artikel 15: Auskunftsrecht der betroffenen Person",
+        "Artikel 17: Recht auf Löschung (\"Recht auf Vergessenwerden\")",
+        "Artikel 19: Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten"
+      ]
+    },
+    "placeholders": {
+      "controllerName": "[Name des Behandlungsverantwortlich]",
+      "controllerAddress": "[Adresse des Behandlungsverantwortlich]",
+      "subjectName": "[Dein Name]",
+      "subjectAddress": "[Deine Adresse]",
+      "requestDate": "[Datum]"
+    },
+    "templates": {
+      "labels": {
+        "datePrefix": "Datum: ",
+        "recipientHeading": "Zu:"
+      },
+      "information": {
+        "subjectLine": "Betreff: Auskunftsrecht gemäß Artikel 14 der Datenschutz-Grundverordnung",
+        "intro": "Ich kontaktiere Sie um mein Recht auf Auskunft gemäß Artikel 14 der Datenschutz-Grundverordnung (DSGVO) auszuüben, der die Erhebung personenbezogener Daten über mich aus anderen Quellen als meiner eigenen betrifft.",
+        "referenceLine": "Referenz: {{referenceId}}",
+        "requestListIntro": "Ich bitte Sie mir innerhalb der in Artikel 12, Absatz 3 festgelegten Frist folgende Informationen zukommen zu lassen:",
+        "bulletItems": [
+          "Welche Kategorien personenbezogener Daten Sie über mich verarbeiten",
+          "Aus welchen Quellen die Informationen stammen (und gegebenenfalls Informationen zu den Quellenkategorien)",
+          "Zweck und Rechtsgrundlage der Verarbeitung",
+          "Welche Empfänger oder Empfängerkategorien Zugang zu den Informationen erhalten haben oder erhalten werden",
+          "Geplante Aufbewahrungsfristen oder Kriterien zur Bestimmung der Aufbewahrungsfrist",
+          "Welche Rechte ich habe, einschließlich des Rechts auf Informationspflicht, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit",
+          "Das Recht, sich bei der Norwegischen Datenschutzbehörde zu beschweren",
+          "Eventuell automatisierte Entscheidungsfindung oder Profilerstellung und wie sie funktioniert"
+        ],
+        "dataSourceLine": "Så vidt jeg kjenner til, ble opplysningene innhentet via: {{dataSource}}.",
+        "postListParagraphs": [
+          "{{dataSourceLine}}Videre ber jeg om kopi av personopplysningene som behandles, jf. artikkel 15.",
+          "Dersom dere trenger ytterligere informasjon for å bekrefte min identitet, ber jeg om at dere opplyser om det så raskt som mulig. Jeg foreslår at all kommunikasjon skjer per e-post eller annet sikkert medium.",
+          "På forhånd takk for hjelpen. Jeg ser frem til svar innenfor den lovpålagte fristen."
+        ],
+        "signoff": "Mit Grüßen von"
+      },
+      "erasure": {
+        "subjectLine": "Emne: Betreff: Antrag auf Löschung gemäß Artikel 17 der Datenschutz-Grundverordnung",
+        "referenceLine": "Referenz: {{referenceId}}",
+        "paragraphs": [
+          "Ich fordere hiermit die sofortige Löschung aller mich betreffenden personenbezogenen Daten gemäß Artikel 17 der Datenschutz-Grundverordnung.",
+          "Bitte löschen Sie alle mich betreffenden personenbezogenen Daten, wie sie in Artikel 4 Nr. 1 definiert sind, und senden Sie eine Bestätigung, sobald dies erfolgt ist.",
+          "Falls ich zuvor in die Verarbeitung meiner personenbezogenen Daten eingewilligt habe, widerrufe ich diese Einwilligung hiermit mit sofortiger Wirkung für die gesamte Verarbeitung.",
+          "Ich bin der Auffassung, dass die Voraussetzungen gemäß Artikel 17 Nr. 1 erfüllt sind. Keine der Ausnahmen gemäß Artikel 17 Nr. 3 findet Anwendung, insbesondere weil ich keine öffentliche Person bin.",
+          "Falls die Daten öffentlich gemacht wurden, verpflichtet Artikel 17 Nr. 2 Sie, angemessene Maßnahmen zu ergreifen, um andere Verantwortliche, einschließlich Suchmaschinen, darüber zu informieren, dass ich die Löschung von Links, Kopien und Reproduktionen verlange. Dies gilt auch für abgeleitete Versionen.",
+          "Falls die Daten an Dritte weitergegeben wurden, verpflichtet Artikel 19 Sie, jeden Empfänger über diese Löschung und etwaige Verweise zu benachrichtigen. Bitte informieren Sie mich darüber, welche Empfänger benachrichtigt werden.",
+          "Bitte bestätigen Sie den Erhalt dieser Anfrage und die Löschung so bald wie möglich."
+        ],
+        "signoff": "Med Grüßen von"
+      }
+    }
+  },
+  "angrerett": {
+    "heading": "Norwegisches Widerrufsrecht",
+    "description": "Erstelle einen Widerrufsrecht Brief nach dem Widerrufsrecht vom 20. juni 2014, nr. 27.",
+    "formAria": "Details für den Widerrufsrecht Briefes",
+    "previewAria": "Vorschau des Widerrufsrecht Briefes",
+    "copyButtonLabel": "Kopiere Bief",
+    "form": {
+      "agreementType": {
+        "label": "Anfragentyp",
+        "options": [
+          { "value": "service", "label": "Dienst / Abonnement" },
+          { "value": "purchase", "label": "Warenkauf" }
+        ]
+      },
+      "companyName": {
+        "label": "Verkäufer oder Dinstanbieter",
+        "placeholder": "Beispel GMBH"
+      },
+      "accountRef": {
+        "label": "Konto/Kundenreferenz",
+        "placeholder": "E-Mail eller Kundennummer"
+      },
+      "agreementDate": {
+        "label": "Datum der Abonnements/Kaufs"
+      },
+      "itemDescription": {
+        "label": "Produkt oder Dienst (optional)",
+        "placeholder": "Beschreibung des Produkts oder der Dienstleistung"
+      },
+      "customerName": {
+        "label": "Name",
+        "placeholder": "Max Mustermann"
+      },
+      "todayDate": {
+        "label": "Heutiges Datum"
+      },
+      "sections": {
+        "request": "Dienstdetails",
+        "partner": "Verkäufer/Dienstanbieter",
+        "purchase": "Kaufdetails",
+        "customer": "Über dich"
+      }
+    },
+    "formHint": "Keine der Informationen werden gespeichert. Der Brief wird nur im Browser generiert.",
+    "legal": {
+      "heading": "Rechtsgrundlage",
+      "items": [
+        "Widerrufsrecht vom 20. juni 2014, nr. 27 § 20 erster Absatz",
+        "§ 24: Rückerstattung bei Ausübung des Widerrufsrechts",
+        "§ 25: die Pflicht des Verbrauchers zur Rückgabe der Waren",
+        "§ 26: Verpflichtung des Verkäufers zur Rückerstattung"
+      ]
+    },
+    "placeholders": {
+      "companyName": "[Verkäufer/Dienstanbieter]",
+      "accountRef": "[Kundenreferenz]",
+      "agreementDate": "[Datum des kaufes]",
+      "itemDescription": "[Produkt oder Dienst]",
+      "customerName": "[Name]",
+      "todayDate": "[Datum]"
+    },
+    "templates": {
+      "service": "Hallo {{company}}{{accountSegment}},\n\nIch beziehe mich auf meinen mit Ihnen unterzeichneten Abonnement-/Servicevertrag{{serviceItemSegment}}{{serviceAgreementSegment}}.\n\nGemäß dem Widerrufsrechtgesetz vom 20. Juni 2014 Nr. 27 erkläre ich hiermit unmissverständlich, dass ich von meinem Widerrufsrecht Gebrauch mache und damit von diesem Vertrag zurücktrete (vgl. Artikel 20 Absatz 1 des Gesetzes).\n\nIch beantrage, dass der Vertrag mit dem Zeitpunkt des Eingangs dieser Mitteilung als beendet gilt und dass alle gezahlten Beträge gemäß den Bestimmungen des Widerrufsrechtsgesetzes zurückerstattet werden. Ich bitte ferner um eine schriftliche Bestätigung über den Eingang meiner Widerrufserklärung sowie um eine Bestätigung der Rückerstattung und der Beendigung des Abonnements.\n\nFalls zur Durchführung des Vorgangs ein separates Formular oder zusätzliche Informationen erforderlich sind, bitte ich Sie, diese unverzüglich einzureichen.\n\nMit Grüßen von\n{{customer}}\n{{today}}",
+      "purchase": "Hallo {{company}}{{accountSegment}},\n\nIch beziehe mich auf meinen Kauf bei Ihnen{{purchaseTimingSegment}}.\n\n{{purchaseItemBlock}}Gemäß dem Widerrufsrechtgesetz vom 20. Juni 2014 Nr. 27 erkläre ich hiermit, dass ich von meinem Widerrufsrecht Gebrauch mache und vom Kaufvertrag zurücktrete (vgl. Artikel 20 Absatz 1).\n\nIch beantrage die Stornierung des Kaufs und die unverzügliche Rückerstattung des Kaufpreises, spätestens jedoch innerhalb von 14 Tagen (vgl. §§ 24 und 26). Bitte geben Sie mir praktische Informationen zur Rücksendung des Artikels gemäß § 25.\n\nFalls Sie weitere Informationen benötigen oder ein Stornierungsformular ausgefüllt haben möchten, senden Sie es mir bitte umgehend zu.\n\nMit Grüßen von\n{{customer}}\n{{today}}",
+      "serviceAgreementSegment": ", abgeschlossen am {{agreementDate}}",
+      "purchaseAgreementSegment": "bestellt am {{agreementDate}}",
+      "serviceAccountSegment": " (konto: {{account}})",
+      "purchaseAccountSegment": " (referanse: {{account}})",
+      "serviceItemSegment": " über {{itemDescription}}",
+      "purchaseItemLine": "Der kauf gilt {{itemDescription}}."
+    }
+  },
+  "notifications": {
+    "copySuccess": "Kopiert!",
+    "copyError": "Fehler beim kopieren",
+    "copyLogError": "Konnte nicht kopieren"
+  }
+}
